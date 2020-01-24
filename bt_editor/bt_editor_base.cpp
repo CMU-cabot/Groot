@@ -194,6 +194,8 @@ const NodeModels &BuiltinNodeModels()
 
         factory.registerNodeType<BT::DecoratorSubtreeNode>("Root");
 
+	factory.registerFromPlugins();
+
         NodeModels out;
         for( const auto& it: factory.manifests())
         {
